@@ -19,15 +19,15 @@
                 <form action="php/register_user_be.php" method="POST"class="form">
                     <label class="user">
                         <i class='bx bx-user'></i>
-                        <input type="text" placeholder="Ingresar su usuario" name="user"> 
+                        <input type="text" placeholder="Ingresar su usuario" name="user" minlength="5" required> 
                     </label>
                     <label class="email">
                         <i class='bx bx-envelope'></i>
-                        <input type="email" placeholder="Ingrese su correo" name="email">
+                        <input type="email" placeholder="Ingrese su correo" name="email" required>
                     </label>
                     <label class="password">
                         <i class='bx bx-lock-open'></i>
-                        <input type="password" placeholder="Ingrese su contraseña" name="password">
+                        <input type="password" placeholder="Ingrese su contraseña" name="password" minlength="8" required>
                     </label>
                     <input type="submit" value="Resgistrarse">         
                 </form>

@@ -13,13 +13,8 @@
         header("location:../Bienvenida.php");
         exit();
     }else{
-        echo'
-            <script>
-                alert("Usuario no existe, verifique los datos");
-                
-            window.location="../InicioSesion.php";
-            </script>
-        ';
+        header("location:../InicioSesion.php?error=1");
         exit();
     }
+
 ?>

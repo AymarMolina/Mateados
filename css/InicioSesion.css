@@ -50,28 +50,28 @@ html,body{
 }
 #container-right{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-grow: 1;
     height: 100%;
     width: 500px;
-    overflow: auto;
+    justify-content: center;
     margin-left: -500px;
     margin-right: 0px;
     flex-shrink: 0;
     background-color:#1f2029;
+    overflow: auto;
     
 }
 #loginArea{
-    margin:0 10px 0 10px;
-    height: 90%;
+    height: 80%;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
     width: 430px;
 }
 .p1 {
     font-family: 'Righteous', cursive;
     padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 0.3em;
     margin-left: 10px;
     font-size: 2.5rem;
     color:white;
@@ -80,17 +80,17 @@ html,body{
     font-family: 'Righteous', cursive;
     margin-top:0px ;
     margin-left: 190px;
-    margin-bottom:80px;
+    margin-bottom:50px;
     font-size: 2.5rem;
     color: white;
 }
 .form{
-    margin:40px 0 0 0;
+    margin:0px 0 0 0;
 }
 .form label{
     display: flex;
     align-items: center;
-    margin:30px 15px 47px 15px;
+    margin:1.5em 1em 2em 1em;
     background-color: #2b2e38;
     padding:0 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,.1);
@@ -105,6 +105,14 @@ html,body{
     outline:none;
     border: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #2b2e38 inset;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: #f7f7f7;
+  }
 .user{
     margin-top: 100px;
 }
@@ -131,7 +139,7 @@ h5{
     font-size: 16px;
     cursor:pointer;
     padding:10px 15px;
-    margin-top: 80px;
+    margin-top: 70px;
     width: 270px;
     margin-left: 19%;
     height: 49px;
@@ -146,7 +154,7 @@ h5{
     font-size: 16px;
     cursor:pointer;
     padding:10px 15px;
-    margin-top: 80px;
+    margin-top: 70px;
     width: 270px;
     margin-left: 19%;
     height: 49px;
@@ -157,7 +165,7 @@ h6{
     color:white;
     font-size: 14px;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 .registro{
     display: flex;
