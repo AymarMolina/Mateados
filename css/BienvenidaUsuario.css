@@ -1,0 +1,221 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contenido {
+    background-color: #e6ffe9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .div {
+    background-color: #e6ffe9;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .mateados {
+    position: absolute;
+    width: 192px;
+    height: 47px;
+    top: 55px;
+    left: 45px;
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Racing Sans One-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .acerca {
+    position: absolute;
+    height: 38px;
+    top: 69px;
+    left: 272px;
+    text-shadow: 3px 4px 4px #00000040;
+    font-family: "Raleway-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .donacion {
+    position: absolute;
+    height: 38px;
+    top: 69px;
+    left: 591px;
+    text-shadow: 3px 4px 4px #00000040;
+    font-family: "Raleway-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .redes {
+    position: absolute;
+    height: 38px;
+    top: 69px;
+    left: 463px;
+    text-shadow: 3px 4px 4px #00000040;
+    font-family: "Raleway-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .botones {
+    left: 828px;
+    position: absolute;
+    width: 258px;
+    height: 55px;
+    top: 61px;
+    background-color: #b2ffba;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px #00000040;
+  }
+  
+  .grados {
+    position: relative;
+    height: 55px;
+    background-color: #b2ffba;
+    border-radius: 10px;
+  }
+  
+  .grados p {
+    position: absolute;
+    height: 38px;
+    top: 8px;
+    left: 73px;
+    text-shadow: 3px 4px 4px #00000040;
+    font-family: "Raleway-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .cuenta {
+    left: 1149px;
+    position: absolute;
+    width: 258px;
+    height: 55px;
+    top: 61px;
+    background-color: #b2ffba;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px #00000040;
+  }
+  .cuenta p{
+    position: absolute;
+    height: 38px;
+    top: 8px;
+    left: 73px;
+    text-shadow: 3px 4px 4px #00000040;
+    font-family: "Raleway-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  .imagen {
+    position: absolute;
+    width: 655px;
+    height: 655px;
+    top: 299px;
+    left: 45px;
+    background-color: #b2ffba;
+    border-radius: 327.5px;
+    box-shadow: 5px 4px 4px #00000040;
+  }
+  
+  .img {
+    position: absolute;
+    width: 579px;
+    height: 623px;
+    top: 20px;
+    left: 41px;
+    object-fit: cover;
+  }
+  
+  .bienvenido {
+    position: absolute;
+    width: 642px;
+    height: 75px;
+    top: 216px;
+    left: 798px;
+    font-family: "Raleway-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #000000;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .gracias-por-elegir {
+    position: absolute;
+    width: 569px;
+    height: 376px;
+    top: 450px;
+    left: 828px;
+    font-family: "Raleway-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 40px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .span {
+    font-family: "Raleway-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+  
+  .negrita {
+    font-family: "Raleway-ExtraBold", Helvetica;
+    font-weight: 800;
+  }
+  
+  .user {
+    position: absolute;
+    height: 56px;
+    top: 331px;
+    left: 1030px;
+    font-family: "Raleway-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
