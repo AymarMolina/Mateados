@@ -1,3 +1,18 @@
+<?php 
+
+    session_start();
+    if(!isset($_SESSION['user'])){
+        echo '
+        <script>
+            alert("Porfavor debes iniciar sesion");
+            window.location="../InicioSesion.php";
+        </script>
+        ';
+        session_destroy();
+        die();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,11 +31,11 @@
         <div class="redes">Redes</div>
         <div class="botones">
           <div class="grados">
-            <a href="Grados.html"><p>Grados</p></a>
+            <a href="Grados.php"><p>Grados</p></a>
           </div>
         </div>
         <div class="cuenta">
-          <a href="#"><p>Cuenta</p></a>
+          <a href="../php/close_session.php"><p>Cerrar</p></a>
         </div>
         <div class="imagen">
           <img class="img" src="../images/ima.png" />

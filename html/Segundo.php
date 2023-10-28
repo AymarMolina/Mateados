@@ -1,10 +1,24 @@
+<?php 
+
+    session_start();
+    if(!isset($_SESSION['user'])){
+        echo '
+        <script>
+            alert("Porfavor debes iniciar sesion");
+            window.location="../InicioSesion.php";
+        </script>
+        ';
+        session_destroy();
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
-    <link rel="stylesheet" href="../css/Primer.css">
+    <link rel="stylesheet" href="../css/Segundo.css">
     <link rel="icon" href="../images/Logo.jpg">
   </head>
   <body>
@@ -21,7 +35,7 @@
         </div>
         <div class="boton-2">
             <div class="volver">
-                <a href="Grados.html"><p>Volver</p></a>
+                <a href="Grados.php"><p>Volver</p></a>
             </div>
         </div>
         <div class="boton-3">
@@ -30,13 +44,13 @@
             </div>
         </div>
         <div class="texto">
-          <div class="txt">1er <br />Grado de Primaria</div>
+          <div class="txt">2do <br />Grado de Primaria</div>
           <img class="imagen" src="../images/1.png" />
         </div>
-        <div class="tema-1">Suma de numeros naturales</div>
-        <div class="tema-2">Resta de numeros naturales</div>
+        <div class="tema-1">Multiplicación</div>
+        <div class="tema-2">Conjuntos</div>
         <div class="tema-3">TEMAS</div>
-        <p class="p">Division de numeros no mayores a 20</p>
+        <p class="p">Propiedad de adición</p>
       </div>
     </div>
   </body>

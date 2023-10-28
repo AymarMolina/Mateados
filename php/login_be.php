@@ -10,7 +10,7 @@
 
     if(mysqli_num_rows($verify_login)>0){
         $_SESSION['user']=$user;
-        header("location:../Bienvenida.php");
+        header("location:../html/BienvenidaUsuario.php");
         exit();
     }else{
         header("location:../InicioSesion.php?error=1");

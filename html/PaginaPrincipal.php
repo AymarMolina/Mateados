@@ -1,3 +1,17 @@
+<?php 
+
+    session_start();
+    if(!isset($_SESSION['user'])){
+        echo '
+        <script>
+            alert("Porfavor debes iniciar sesion");
+            window.location="../InicioSesion.php";
+        </script>
+        ';
+        session_destroy();
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="es-ES">
     <head>
@@ -38,7 +52,7 @@
                         <div class="info-child">
                             <h4>Mateados Sitio Web</h4>
                             <p>La mejor página web para el refuerzo en el área de matemática básica</p>
-                            <p class=""><a href="../Bienvenida.php"><button class="bot"><p>Empezar</p></button></a></p>
+                            <p class=""><a href="BienvenidaUsuario.php"><button class="bot"><p>Empezar</p></button></a></p>
                         </div>
                         <button><p>Propiedades</p></button>
                     </div>

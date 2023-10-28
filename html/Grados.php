@@ -1,3 +1,17 @@
+<?php 
+
+    session_start();
+    if(!isset($_SESSION['user'])){
+        echo '
+        <script>
+            alert("Porfavor debes iniciar sesion");
+            window.location="../InicioSesion.php";
+        </script>
+        ';
+        session_destroy();
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +30,7 @@
         <div class="redes">Redes</div>
         <div class="botones">
           <div class="volver">
-            <a href="BienvenidaUsuario.html"><p>Volver</p></a>
+            <a href="BienvenidaUsuario.php"><p>Volver</p></a>
           </div>
         </div>
         <div class="cuenta">
@@ -25,14 +39,14 @@
         <div class="imagen-1">
           <div class="elipse"></div>
           <div class="primer">1er Grado de Primaria</div>
-          <a href="Primer.html">
+          <a href="Primer.php">
             <img class="img-1" src="../images/1.png" />
           </a>
         </div>
         <div class="imagen-2">
           <div class="elipse"></div>
           <div class="segundo">2do Grado de Primaria</div>
-          <a href="Segundo.html">
+          <a href="Segundo.php">
             <img class="img-2" src="../images/2.png" />
           </a>
         </div>
