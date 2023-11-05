@@ -19,38 +19,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
     <link rel="stylesheet" href="../css/Primer.css">
-    <link rel="icon" href="../images/Logo.jpg">
+    <link rel="icon" href="../images/ima.png">
   </head>
   <body>
     <div class="pantalla">
       <div class="div">
-        <div class="mateados">MATEADOS</div>
+        <div class="mateados"><b><i>MATEADOS</i></b></div>
         <div class="acerca">Acerca de</div>
-        <div class="donacion">Donacion :)</div>
+        <div class="donacion">Donacion</a></div>
         <div class="redes">Redes</div>
         <div class="boton-1">
             <div class="inscribirme">
-                <a href="Unidad1.php"><p>Inscribirme</p></a>
+                <a href="../html/teoria1.html"><p>Inscribirme</p></a>
               </div>
         </div>
         <div class="boton-2">
             <div class="volver">
-                <a href="Grados.php"><p>Volver</p></a>
+                <a href="../html/Grados.php"><p>Volver</p></a>
             </div>
         </div>
         <div class="boton-3">
             <div class="cuenta">
-                <a href="#"><p>Cuenta</p></a>
+                <a href="../php/close_session.php"><p>Cerrar</p></a>
             </div>
         </div>
         <div class="texto">
           <div class="txt">1er <br />Grado de Primaria</div>
           <img class="imagen" src="../images/1.png" />
         </div>
-        <div class="tema-1">Suma de numeros naturales</div>
-        <div class="tema-2">Resta de numeros naturales</div>
-        <div class="tema-3">TEMAS</div>
-        <p class="p">Division de numeros no mayores a 20</p>
+        <div class="tema-1">1. Representando números hasta el 10</div>
+        <div class="tema-2">2. Juego de sumar</div>
+        <div class="tema-3">3. Juego de bolitas coloridas</div>
+        <div class="tema-4">4. Números Mágicos y sus Palabras Secretas</div>
+        <p class="palabra">UNIDADES
       </div>
     </div>
   </body>

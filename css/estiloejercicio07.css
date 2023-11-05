@@ -1,0 +1,53 @@
+body {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.center-content {
+    text-align: center;
+}
+
+#container {
+    background-color: #E6FFE9;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px; /* Agregamos el border radius */
+}
+
+.numero-grande {
+    font-size: 48px;
+    font-weight: bold;
+}
+button {
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+}
+
+/* Estilos adicionales para el botón "Generar Notificación al Correo" */
+#generarNotificacionBtn {
+    /* Agrega cualquier estilo adicional que desees para este botón */
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+}
+#comprobarBtn{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#siguienteBtn{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

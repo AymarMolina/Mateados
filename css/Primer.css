@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding:0;
     margin: 0;
@@ -25,7 +26,7 @@
     top: 55px;
     left: 45px;
     text-shadow: 0px 4px 4px #00000040;
-    font-family: "Racing Sans One-Regular", Helvetica;
+    font-family: 'Racing Sans One', sans-serif;
     font-weight: 400;
     color: #000000;
     font-size: 32px;
@@ -40,7 +41,7 @@
     top: 69px;
     left: 272px;
     text-shadow: 3px 4px 4px #00000040;
-    font-family: "Raleway-ExtraBold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: #000000;
     font-size: 32px;
@@ -56,7 +57,7 @@
     top: 69px;
     left: 591px;
     text-shadow: 3px 4px 4px #00000040;
-    font-family: "Raleway-ExtraBold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: #000000;
     font-size: 32px;
@@ -72,7 +73,7 @@
     top: 69px;
     left: 463px;
     text-shadow: 3px 4px 4px #00000040;
-    font-family: "Raleway-ExtraBold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: #000000;
     font-size: 32px;
@@ -99,7 +100,7 @@
     top: 8px;
     left: 41px;
     text-shadow: 3px 4px 4px #00000040;
-    font-family: "Raleway-ExtraBold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: #000000;
     font-size: 32px;
@@ -126,7 +127,7 @@
     top: 8px;
     left: 80px;
     text-shadow: 3px 4px 4px #00000040;
-    font-family: "Raleway-ExtraBold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: #000000;
     font-size: 32px;
@@ -160,7 +161,7 @@
     top: 8px;
     left: 73px;
     text-shadow: 3px 4px 4px #00000040;
-    font-family: "Raleway-ExtraBold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: #000000;
     font-size: 32px;
@@ -187,7 +188,7 @@
     height: 112px;
     top: 436px;
     left: 131px;
-    font-family: "Raleway-Regular", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #000000;
     font-size: 48px;
@@ -208,9 +209,9 @@
   .tema-1 {
     position: absolute;
     height: 38px;
-    top: 258px;
+    top: 358px;
     left: 740px;
-    font-family: "Raleway-Bold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 32px;
@@ -223,9 +224,9 @@
   .tema-2 {
     position: absolute;
     height: 38px;
-    top: 352px;
+    top: 452px;
     left: 741px;
-    font-family: "Raleway-Bold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 32px;
@@ -234,13 +235,31 @@
     line-height: normal;
     white-space: nowrap;
   }
-  
-  .tema-3 {
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .palabra {
     position: absolute;
     height: 38px;
     top: 178px;
-    left: 1063px;
-    font-family: "Raleway-Bold", Helvetica;
+    left: 1043px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .pantalla .tema-3 {
+    position: absolute;
+    height: 38px;
+    top: 547px;
+    left: 741px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 32px;
@@ -249,13 +268,12 @@
     line-height: normal;
     white-space: nowrap;
   }
-  
-  .pantalla .p {
+  .pantalla .tema-4 {
     position: absolute;
     height: 38px;
-    top: 447px;
+    top: 647px;
     left: 741px;
-    font-family: "Raleway-Bold", Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 32px;

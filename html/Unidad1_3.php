@@ -31,7 +31,7 @@
         <img id="imagen" class="draggable" src="../images/pear.jpg" alt="Imagen para Arrastrar" draggable="true" ondragstart="drag(event)">
         <div id="mensaje"></div>
         <button id="retrocederBtn" class="btn" onclick="history.back()">Retroceder Página</button>
-        <button id="continuarBtn" class="btn" onclick="location.href='siguiente_ejercicio.html'">Continuar con el Siguiente Ejercicio</button>
+        <button id="continuarBtn" class="btn" onclick="location.href='ejercicio04primergrado.html'">Continuar con el Siguiente Ejercicio</button>
     </div>
 
     <script src="../js/unidad1-3.js"></script>

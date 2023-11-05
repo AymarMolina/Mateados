@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   padding:0;
   margin: 0;
@@ -10,7 +11,6 @@
     justify-content: center;
     width: 100%;
   }
-  
   .div {
     background-color: #e6ffe9;
     width: 1440px;
@@ -65,7 +65,6 @@
     line-height: normal;
     white-space: nowrap;
   }
-  
   .redes {
     position: absolute;
     height: 38px;
@@ -147,8 +146,8 @@
     position: absolute;
     width: 383px;
     height: 383px;
-    top: 160px;
-    left: 45px;
+    top: 260px;
+    left: 545px;
     border-radius: 191.5px;
   }
   
@@ -187,167 +186,4 @@
     object-fit: cover;
   }
   
-  .imagen-2 {
-    position: absolute;
-    width: 383px;
-    height: 383px;
-    top: 167px;
-    left: 529px;
-    border-radius: 191.5px;
-  }
-  
-  .segundo {
-    position: absolute;
-    width: 293px;
-    height: 28px;
-    top: 280px;
-    left: 70px;
-    font-family: "Raleway-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: justify;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .img-2 {
-    position: absolute;
-    width: 315px;
-    height: 247px;
-    top: 33px;
-    left: 48px;
-    object-fit: cover;
-  }
-  
-  .imagen-6 {
-    position: absolute;
-    width: 383px;
-    height: 383px;
-    top: 571px;
-    left: 1030px;
-    border-radius: 191.5px;
-  }
-  
-  .cuarto {
-    position: absolute;
-    width: 293px;
-    height: 28px;
-    top: 286px;
-    left: 73px;
-    font-family: "Raleway-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: justify;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  .sexto{
-    position: absolute;
-    width: 293px;
-    height: 28px;
-    top: 286px;
-    left: 73px;
-    font-family: "Raleway-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: justify;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .img-6 {
-    position: absolute;
-    width: 315px;
-    height: 247px;
-    top: 32px;
-    left: 34px;
-    object-fit: cover;
-  }
-  
-  .imagen-5 {
-    position: absolute;
-    width: 383px;
-    height: 383px;
-    top: 571px;
-    left: 529px;
-    border-radius: 191.5px;
-  }
-  
-  .quinto {
-    position: absolute;
-    width: 293px;
-    height: 28px;
-    top: 286px;
-    left: 81px;
-    font-family: "Raleway-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: justify;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .img-5 {
-    position: absolute;
-    width: 315px;
-    height: 247px;
-    top: 32px;
-    left: 52px;
-    object-fit: cover;
-  }
-  
-  .imagen-4 {
-    position: absolute;
-    width: 383px;
-    height: 383px;
-    top: 571px;
-    left: 45px;
-    border-radius: 191.5px;
-  }
-  
-  .img-4 {
-    position: absolute;
-    width: 315px;
-    height: 247px;
-    top: 32px;
-    left: 35px;
-    object-fit: cover;
-  }
-  
-  .imagen-3 {
-    position: absolute;
-    width: 383px;
-    height: 383px;
-    top: 167px;
-    left: 1013px;
-    border-radius: 191.5px;
-  }
-  
-  .tercer {
-    position: absolute;
-    width: 293px;
-    height: 28px;
-    top: 280px;
-    left: 80px;
-    font-family: "Raleway-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: justify;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .img-3 {
-    position: absolute;
-    width: 315px;
-    height: 247px;
-    top: 26px;
-    left: 35px;
-    object-fit: cover;
-  }
   

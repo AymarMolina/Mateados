@@ -1,0 +1,39 @@
+body {
+    background-image: url(../images/globos.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.email-interface {
+    background-color: #E8FFE6;
+    padding: 5%; /* Cambiado a porcentaje */
+    border-radius: 10px;
+    max-width: 400px; /* Limita el ancho máximo para que no se estire demasiado en pantallas grandes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Elimina las propiedades de posición absoluta en .noleido y .leido */
+
+.email {
+    display: flex;
+    flex-direction: column; /* Cambia a diseño de columna para que se ajuste mejor en pantallas pequeñas */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
