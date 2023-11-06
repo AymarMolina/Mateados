@@ -1,0 +1,15 @@
+.color-texto{
+    color: #000000 !important;
+    text-align: left!important;
+}
+
+.boton-registro{
+        
+        color: #000000 !important;
+        font-weight: bold;
+        background-color: #6fdf6f;
+        padding: 8px;
+        border-radius: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+}
