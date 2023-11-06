@@ -47,7 +47,7 @@
                         <img src="images/ima.png" alt="logo">
                     </div>
                     <div class="col-6 align-self-center text-right">
-                        <a href="#" class="boton-registro lead">Regístrate</a>
+                        <a href="Registro.php" class="boton-registro lead">Regístrate</a>
                     </div>
                 </div>
             </header>
@@ -59,7 +59,7 @@
                 "¡Preparate para un viaje matemático emocionante con Mateados! 🚀 
                 <br> ¡Inscríbete ahora y conviértete en maestr@ de las matemáticas! <br>🎉 ¡Inscripciones abiertas! 📚✨"
             </p>
-            <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Inscríbete aquí</a>
+            <a href="Registro.php" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Inscríbete aquí</a>
         </div>
     </div>
     <!-- three-blcok -->
@@ -91,7 +91,7 @@
                     <h2 class="font-weight-bold">Descubre y juega</h2>
                     <p class="my-4">Explora nuestro mundo lleno de juegos matemáticos interactivos y desafiantes. 
                          Embárcate en emocionantes aventuras que te enseñarán sobre números, formas y mucho más.</p>
-                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Aprender más</a>
+                    <a href="Registro.php" class="btn my-4 font-weight-bold atlas-cta cta-blue">Aprender más</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
                     <img src="images/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
@@ -109,7 +109,7 @@
                         
 "Descubre el mundo de ExploraMatemáticas con cuestionarios interactivos emocionantes y explicaciones simples. Gana medallas por tus logros y explora temas matemáticos divertidos. ¡Aventúrate y aprende con nosotros!"
                     </p>
-                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">¡Comienza Ahora!</a>
+                    <a href="Registro.php" class="btn my-4 font-weight-bold atlas-cta cta-blue">¡Comienza Ahora!</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
                     <img src="images/feature-2.png" alt="Safe and reliable" class="mx-auto d-block">
