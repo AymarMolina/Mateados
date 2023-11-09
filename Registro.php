@@ -29,6 +29,10 @@
                         <i class='bx bx-lock-open'></i>
                         <input type="password" placeholder="Ingrese su contraseña" name="password" minlength="8" required>
                     </label>
+                    <label class="age">
+                        <i class='bx bx-lock-open'></i>
+                        <input type="text" placeholder="Ingrese su edad" name="age" required>
+                    </label>
                     <input type="submit" value="Resgistrarse">         
                 </form>
             </div>
