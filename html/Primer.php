@@ -5,7 +5,7 @@
         echo '
         <script>
             alert("Porfavor debes iniciar sesion");
-            window.location="../InicioSesion.php";
+            window.location="../Loger/InicioSesion.php";
         </script>
         ';
         session_destroy();
@@ -30,7 +30,7 @@
         <div class="redes">Redes</div>
         <div class="boton-1">
             <div class="inscribirme">
-                <a href="../html/teoria1.html"><p>Inscribirme</p></a>
+                <a href="../html/teoria1.php"><p>Inscribirme</p></a>
               </div>
         </div>
         <div class="boton-2">

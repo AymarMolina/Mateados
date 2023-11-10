@@ -19,7 +19,7 @@
         echo '
             <script>
                 alert("Este correo ya registrado");
-                window.location="../Registro.php";
+                window.location="../Loger/Registro.php";
             </script>
         ';
         exit();
@@ -29,7 +29,7 @@
         echo '
             <script>
                 alert("Este usuario ya esta registrado");
-                window.location="../Registro.php";
+                window.location="../Loger/Registro.php";
             </script>
         ';
         exit();
@@ -40,13 +40,13 @@
     if($ejec){
         echo '<script>
             alert("Usuario registrado correctamente");
-            window.location="../InicioSesion.php";
+            window.location="../Loger/InicioSesion.php";
         </script>';
     }else{
         echo '
             <script>
                 alert("Intentelo de nuevo");
-                window.location="../InicioSesion.php";
+                window.location="../Loger/InicioSesion.php";
             </script>
         ';
     }

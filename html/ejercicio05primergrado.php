@@ -1,3 +1,17 @@
+<?php 
+
+    session_start();
+    if(!isset($_SESSION['user'])){
+        echo '
+        <script>
+            alert("Porfavor debes iniciar sesion");
+            window.location="../Loger/InicioSesion.php";
+        </script>
+        ';
+        session_destroy();
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +40,7 @@
         <p>Resultado: <span id="result">0</span></p>
         <p id="message"></p>
         <button id="back-button" onclick="goBack()">Volver</button>
-        <button id="continue-button" onclick="location.href='ejercicio06primergrado.html'">Continuar con el Tema 3</button>
+        <button id="continue-button" onclick="location.href='ejercicio06primergrado.php'">Continuar con el Tema 3</button>
     </div>
     <script src="../js/scriptejercicio05.js"></script>
 </body>

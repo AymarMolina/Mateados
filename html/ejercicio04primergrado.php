@@ -1,3 +1,17 @@
+<?php 
+
+    session_start();
+    if(!isset($_SESSION['user'])){
+        echo '
+        <script>
+            alert("Porfavor debes iniciar sesion");
+            window.location="../Loger/InicioSesion.php";
+        </script>
+        ';
+        session_destroy();
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

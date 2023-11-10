@@ -218,4 +218,7 @@
     line-height: normal;
     white-space: nowrap;
   }
+  span{
+    background-color: white;
+  }
   

@@ -2,7 +2,7 @@
 
     session_start();
     if(isset($_SESSION['user'])){      
-        header("location: html/BienvenidaUsuario.php");
+        header("location: ../html/BienvenidaUsuario.php");
     }
 ?>
 
@@ -20,8 +20,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Righteous&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/InicioSesion.css">
-        <link rel="icon" href="images/Logo.jpg">
+        <link rel="stylesheet" href="../css/InicioSesion.css">
+        <link rel="icon" href="../images/Logo.jpg">
         <title>Inicio de sesion</title>
     </head>
     <body>
@@ -37,7 +37,7 @@
                 <div id="loginArea">
                     <p class="p1">Bienvenido</p>
                     <p class="p2">a Mateados</p>
-                    <form action="php/login_be.php" method="POST"class="form">
+                    <form action="../php/login_be.php" method="POST"class="form">
                         <?php
                             if (isset($_GET['error'])) {
                                 echo '

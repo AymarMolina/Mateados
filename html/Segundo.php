@@ -5,7 +5,7 @@
         echo '
         <script>
             alert("Porfavor debes iniciar sesion");
-            window.location="../InicioSesion.php";
+            window.location="../Loger/InicioSesion.php";
         </script>
         ';
         session_destroy();

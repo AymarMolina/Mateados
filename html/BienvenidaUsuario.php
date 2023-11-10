@@ -5,7 +5,7 @@
         echo '
         <script>
             alert("Porfavor debes iniciar sesion");
-            window.location="../InicioSesion.php";
+            window.location="../Loger/InicioSesion.php";
         </script>
         ';
         session_destroy();
@@ -49,7 +49,8 @@
           <span class="negrita">Grados</span>
           <span class="span"> para poder comenzar con su reforzamiento matemático.</span>
         </p>
-        <div class="user">Usuario</div>
+        <div class="user"><?php echo $_SESSION["user"];?></div>
+        
       </div>
     </div>
   </body>

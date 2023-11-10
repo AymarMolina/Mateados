@@ -1,17 +1,3 @@
-<?php 
-
-    session_start();
-    if(!isset($_SESSION['user'])){
-        echo '
-        <script>
-            alert("Porfavor debes iniciar sesion");
-            window.location="../InicioSesion.php";
-        </script>
-        ';
-        session_destroy();
-        die();
-    }
-?>
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -23,17 +9,17 @@
 
     <!--  Este es comentario-->
     <!-- custom.css -->
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
     <!-- bootstrap.min.css -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- font-awesome -->
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     
     <!-- AOS -->
-    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="css/aos.css">
 
     <!-- ESTILOS CREADOS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -47,7 +33,7 @@
                         <img src="images/ima.png" alt="logo">
                     </div>
                     <div class="col-6 align-self-center text-right">
-                        <a href="Registro.php" class="boton-registro lead">Regístrate</a>
+                        <a href="Loger/Registro.php" class="boton-registro lead">Regístrate</a>
                     </div>
                 </div>
             </header>
@@ -59,7 +45,7 @@
                 "¡Preparate para un viaje matemático emocionante con Mateados! 🚀 
                 <br> ¡Inscríbete ahora y conviértete en maestr@ de las matemáticas! <br>🎉 ¡Inscripciones abiertas! 📚✨"
             </p>
-            <a href="Registro.php" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Inscríbete aquí</a>
+            <a href="Loger/InicioSesion.php" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Inscríbete aquí</a>
         </div>
     </div>
     <!-- three-blcok -->
@@ -91,7 +77,7 @@
                     <h2 class="font-weight-bold">Descubre y juega</h2>
                     <p class="my-4">Explora nuestro mundo lleno de juegos matemáticos interactivos y desafiantes. 
                          Embárcate en emocionantes aventuras que te enseñarán sobre números, formas y mucho más.</p>
-                    <a href="Registro.php" class="btn my-4 font-weight-bold atlas-cta cta-blue">Aprender más</a>
+                    <a href="Loger/Registro.php" class="btn my-4 font-weight-bold atlas-cta cta-blue">Aprender más</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
                     <img src="images/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
@@ -109,7 +95,7 @@
                         
 "Descubre el mundo de ExploraMatemáticas con cuestionarios interactivos emocionantes y explicaciones simples. Gana medallas por tus logros y explora temas matemáticos divertidos. ¡Aventúrate y aprende con nosotros!"
                     </p>
-                    <a href="Registro.php" class="btn my-4 font-weight-bold atlas-cta cta-blue">¡Comienza Ahora!</a>
+                    <a href="Loger/InicioSesion.php" class="btn my-4 font-weight-bold atlas-cta cta-blue">¡Comienza Ahora!</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
                     <img src="images/feature-2.png" alt="Safe and reliable" class="mx-auto d-block">
@@ -124,22 +110,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="images/client-1.png" class="mx-auto d-block">
+                    <img src="images/client-1.png" class="mx-auto d-block" style="border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="images/client-2.png" class="mx-auto d-block">
+                    <img src="images/client-2.png" class="mx-auto d-block" style="border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="images/client-3.png" class="mx-auto d-block">
+                    <img src="images/client-3.png" class="mx-auto d-block" style="border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="images/client-4.png" class="mx-auto d-block">
+                    <img src="images/client-4.png" class="mx-auto d-block" style="border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="images/client-5.png" class="mx-auto d-block">
+                    <img src="images/client-5.png" class="mx-auto d-block" style="border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="images/client-6.png" class="mx-auto d-block">
+                    <img src="images/client-6.png" class="mx-auto d-block" style="border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -156,7 +142,7 @@
                 
     
     <!-- AOS -->
-    <script src="../js/aos.js"></script>
+    <script src="js/aos.js"></script>
     <script>
       AOS.init({
       });
