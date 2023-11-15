@@ -10603,16 +10603,19 @@ a.text-gray-dark:hover {
     display: none !important
 }
 
+//modificacion
+@media print {
+    .hidden-print {
+        display: none !important
+    }
+}
+
 @media print {
     .visible-print-inline-block {
         display: inline-block !important
     }
 }
 
-@media print {
-    .hidden-print {
-        display: none !important
-    }
-}
+
 
 /*# sourceMappingURL=bootstrap.min.css.map */
