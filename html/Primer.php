@@ -26,7 +26,7 @@
       <div class="div">
         <div class="mateados"><b><i>MATEADOS</i></b></div>
         <div class="acerca">Acerca de</div>
-        <div class="donacion">Donacion</a></div>
+        <div class="donacion">Donación</a></div>
         <div class="redes">Redes</div>
         <div class="boton-1">
             <div class="inscribirme">
