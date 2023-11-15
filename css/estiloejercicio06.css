@@ -28,6 +28,13 @@ body {
 .red {
     background-color: red;
 }
+.redcount{
+    background-color: rgb(177, 233, 139);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    border:none;
+}
 
 .green {
     background-color: green;

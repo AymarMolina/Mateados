@@ -90,7 +90,7 @@ document.getElementById("container").appendChild(generarNotificacionBtn);
 function generarNotificacion() {
     // Aquí puedes agregar la lógica para generar y enviar una notificación al correo
     alert("Notificación generada y enviada al correo.");
-    window.location.href = "../html/correo.html"; // me dirige ala pagina final
+    window.location.href = "../html/correo.php"; // me dirige ala pagina final
 }
 
 // Agregar el botón "Generar Notificación al Correo" al DOM

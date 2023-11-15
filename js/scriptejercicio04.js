@@ -61,7 +61,7 @@ checkButton.addEventListener("click", () => {
                 checkButton.disabled = true;
                 nextButton.disabled = true;
                 continueToTopic2Button.disabled = false; // Habilitar el botón "Continuar con el siguiente tema N°2"
-                location.href='ejercicio05primergrado.html';
+                location.href='ejercicio05primergrado.php';
             } else if (score > 100) {
                 result.textContent = "Puntaje superior a 100 puntos.";
                 nextButton.style.display = "none";
