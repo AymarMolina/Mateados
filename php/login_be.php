@@ -15,7 +15,7 @@
 
     if(mysqli_num_rows($verify_login)>0){
         $_SESSION['user']=$user;
-        header("location:../html/BienvenidaUsuario.php");
+        header("location:../html/Bienvenida.php");
         exit();
     }else{
         header("location:../Loger/InicioSesion.php?error=1");
