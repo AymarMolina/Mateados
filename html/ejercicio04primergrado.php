@@ -26,7 +26,7 @@
         <p>Puntaje: <span id="score">0</span></p>
         <div id="container"></div>
         <div id="button-container">
-            <button id="goBackButton">Volver</button>
+            <button id="goBackButton"onclick="history.back()">Volver</button>
             <button id="checkButton">Comprobar Respuesta</button>
             <button id="nextButton">Continuar con el siguiente ejercicio</button>
             <button id="advanceToNextTopic" style="display: none;">Avanzar al siguiente tema</button>

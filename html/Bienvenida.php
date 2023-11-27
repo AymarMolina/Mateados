@@ -43,8 +43,8 @@
                     <img src="../images/ima.png" alt="">
                     <ul>
                         <li id="btn-abrir-popup">Acerca de</li>
-                        <li><a href="#" >Redes</a></li>
-                        <li><a href="#" >Donacion</a></li>
+                        <li><a href="https://www.instagram.com/mate_a_dos/" target="_blank" >Redes</a></li>
+                        <li><a href="https://paypal.me/xaavi01?country.x=PE&locale.x=es_XC" target="_blank" >Donacion</a></li>
                         <li><a href="Grado.php" id="selected">Grados</a></li>
                         <li><a href="../php/close_session.php" id="selected">Cerrar</a></li>
                     </ul>

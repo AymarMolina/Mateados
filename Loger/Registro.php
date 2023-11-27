@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container__cover">
-         <div class="cover" id="uno">
+        <div class="cover" id="uno">
     <div class="container-form">
         <div id="container-right">
             <div id="loginArea">
