@@ -15,5 +15,11 @@ else if($rq== 3){
 }else if($rq== 4){
     $response=$oMysql->getDatosGrafica();
 }
+else if($rq== 5){
+    $response=$oMysql->getMasculino();
+}
+else if($rq== 6){
+    $response=$oMysql->getFemenino();
+}
 
 echo $response;

@@ -10,6 +10,38 @@ class MySQL{
             return false;
         }
     }
+    public function getMasculino(){
+        $masculino=0;
+        try{
+            $strquery="SELECT COUNT(*) as Usuarios FROM users  WHERE gender='1' ";
+            if($this->conBDPDO()){
+                $pquery=$this->oConBD->prepare($strquery);
+                $pquery->execute();
+                $masculino=$pquery->fetchColumn();      
+            }
+        }catch(PDOException $e){
+            echo "MySql.getRegistros:". $e->getMessage()."";
+            return -1;
+        }
+        return $masculino;
+
+    }
+    public function getFemenino(){
+        $femenino=0;
+        try{
+            $strquery="SELECT COUNT(*) as Usuarios FROM users  WHERE gender='2' ";
+            if($this->conBDPDO()){
+                $pquery=$this->oConBD->prepare($strquery);
+                $pquery->execute();
+                $femenino=$pquery->fetchColumn();      
+            }
+        }catch(PDOException $e){
+            echo "MySql.getRegistros:". $e->getMessage()."";
+            return -1;
+        }
+        return $femenino;
+
+    }
     public function getRegistros(){
         $registros=0;
         try{

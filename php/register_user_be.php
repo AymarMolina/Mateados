@@ -5,6 +5,7 @@
     $email=$_POST['email'];
     $password=$_POST['password'];
     $age=$_POST['age'];
+    $gender=$_POST['gender'];
 
     date_default_timezone_set("");
     $date=date("Y-m-d");
@@ -12,7 +13,7 @@
     //encriptando password
     $password=hash('sha512',$password);
 
-    $query="INSERT INTO users(user, email, passw, edad, fecha) values('$user','$email','$password','$age','$date')";
+    $query="INSERT INTO users(user, email, passw, edad, gender,fecha) values('$user','$email','$password','$age','$gender','$date')";
     //VERIFICAR QUE EL CORREO NO SE REPITA EN LA BASE DE DATOS
     $verify_email=mysqli_query($conexion,"SELECT * FROM users WHERE email='$email'");
     if(mysqli_num_rows($verify_email)>0){

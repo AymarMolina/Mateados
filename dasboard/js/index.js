@@ -3,6 +3,7 @@ function index(){
         console.log("iniciandos...");
         this.getIndicadores();
         this.getDatosGraficas();
+        this.getDatosGraficasGenero();
     }
     this.getIndicadores=function(){
 
@@ -20,7 +21,7 @@ function index(){
             }
          }).done(function(datos){
                 //lA LOGICA de las respuestas
-                $("#idRegistros").text(parseFloat(datos).toLocaleString());
+                $("#idRegistros").text(parseInt(datos).toLocaleString());
             });
         //almacen
         $.ajax({
@@ -36,7 +37,7 @@ function index(){
             }
          }).done(function(datos){
                 //lA LOGICA de las respuestas
-                $("#idEdades").text(parseFloat(datos).toLocaleString());
+                $("#idEdades").text(parseInt(datos).toLocaleString());
             });
         //Ingresos
         $.ajax({
@@ -53,6 +54,37 @@ function index(){
          }).done(function(datos){
                 //lA LOGICA de las respuestas
                 $("#idComentarios").text(parseFloat(datos).toLocaleString());
+            });
+
+        $.ajax({
+                statusCode:{
+                    404:function(){
+                        console.log("Esta pagina no existe");
+                    }
+                },
+                url:'php/servidor.php',
+                method:'POST',
+                data:{
+                    rq:"5"
+                }
+             }).done(function(datos){
+                    //lA LOGICA de las respuestas
+                    $("#idMasculino").text(parseInt(datos).toLocaleString());
+                });
+        $.ajax({
+            statusCode:{
+                404:function(){
+                    console.log("Esta pagina no existe");
+                }
+            },
+            url:'php/servidor.php',
+            method:'POST',
+            data:{
+                rq:"6"
+            }
+         }).done(function(datos){
+                //lA LOGICA de las respuestas
+                $("#idFemenino").text(parseInt(datos).toLocaleString());
             });
     }
     this.getDatosGraficas=function(){
@@ -76,21 +108,6 @@ function index(){
                 let coloresE=new Array();
                 var jDatos=JSON.parse(datos);
 
-                /*var tablaDatos=document.createElement('tabla');
-                tablaDatos.classList.add('table','table-striped');
-                var tr=document.createElement('tr');
-                var th=document.createElement('th');
-                th.innerText="Fecha";
-                tr.appendChild  (th);
-                th=document.createElement('th');
-                th.innerText="Ventas";
-                tr.appendChild  (th);
-                th=document.createElement('th');
-                th.innerText="Precio";
-                tr.appendChild  (th);
-                tablaDatos.appendChild(tr);*/
-
-                
                 
                 for(let i in jDatos){
                     etiquetas.push(jDatos[i].fechaRegistro);
@@ -99,8 +116,6 @@ function index(){
                     coloresR.push("#90ee90");
                     coloresE.push("#ffa420");
                 }
-                /*var idCont=document.getElementById("idContTabla");
-                idCont.appendChild (tablaDatos);*/
 
                 var ctx = document.getElementById('idGrafica').getContext('2d');
                 var mychart=new Chart(ctx, {
@@ -122,6 +137,45 @@ function index(){
                     }
                 })
             }
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.log("Error en la solicitud AJAX: " + textStatus, errorThrown);
+            });;
+    }
+    this.getDatosGraficasGenero=function(){
+        $.ajax({
+            statusCode:{
+                404:function(){
+                    console.log("Esta pagina no existe");
+                }
+            },
+            url:'php/servidor.php',
+            method:'POST',
+            data:{
+                rq:"4"
+            }
+         }).done(function(datos){
+            
+                var num1=document.getElementById('idMasculino').textContent;
+                var numEn=parseInt(num1);
+                var num2=document.getElementById('idFemenino').textContent;
+                var numEn2=parseInt(num2);
+
+                var ctx = document.getElementById('idGraficaGenero').getContext('2d');
+                var mychart=new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                      labels:['Masculino','Femenino'],
+                      datasets:[{
+                        data:[numEn,numEn2],
+                        backgroundColor:[
+                            'rgb(54, 162, 235)',
+                            'rgb(255, 99, 132)'
+                        ],
+                        hoverOffset:4
+                      }]
+                    }
+                })
+            
             }).fail(function (jqXHR, textStatus, errorThrown) {
                 console.log("Error en la solicitud AJAX: " + textStatus, errorThrown);
             });;

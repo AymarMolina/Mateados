@@ -10,33 +10,38 @@
 </head>
 <body>
     <div class="container">
+    
         <div class="row">
-        <div class="col-md-4">
-            <div class="card text-bg-success text-center m-1">
-                <div class="card-header">Usuarios</div>
-                <div class="card-body">
-                    <h5 class="card-title"><span id="idRegistros">35</span></h5>
-                    <p class="card-text">Cantidad de usuarios registrados</p>
+            <div>
+                <span id="idMasculino" style="visibility: hidden;">35</span>
+                <span id="idFemenino" style="visibility: hidden;">35</span>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-bg-success text-center m-1">
+                    <div class="card-header">Usuarios</div>
+                    <div class="card-body">
+                        <h5 class="card-title"><span id="idRegistros">35</span></h5>
+                        <p class="card-text">Cantidad de usuarios registrados</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-bg-warning text-white text-center m-1" >
-                <div class="card-header">Edades</div>
-                <div class="card-body">
-                    <h5 class="card-title"><span id="idEdades">35</span></h5>
-                    <p class="card-text">Edad promedio de alumnos</p>
+            <div class="col-md-4">
+                <div class="card text-bg-warning text-white text-center m-1" >
+                    <div class="card-header">Edades</div>
+                    <div class="card-body">
+                        <h5 class="card-title"><span id="idEdades">35</span></h5>
+                        <p class="card-text">Edad promedio de alumnos</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-bg-info text-white text-center m-1">
-                <div class="card-header">Comentarios</div>
-                <div class="card-body">
-                    <h5 class="card-title"><span id="idComentarios">35</span></h5>
-                    <p class="card-text">Comentarios acerca de la pagina</p>
+            <div class="col-md-4">
+                <div class="card text-bg-info text-white text-center m-1">
+                    <div class="card-header">Comentarios</div>
+                    <div class="card-body">
+                        <h5 class="card-title"><span id="idComentarios">35</span></h5>
+                        <p class="card-text">Comentarios acerca de la pagina</p>
+                    </div>
                 </div>
-            </div>
         </div>
         </div>
         <div class="row my-3">
@@ -45,12 +50,14 @@
                 <canvas id="idGrafica" class="grafica"></canvas>
             </div>
         </div>
-        <div class="row my-3">
-            <div class="col-md-12 text-center">
-                <div id="idContTablas"></div>
+        <div class="row my-3"style="display:flex;justify-content:center">
+            <div class="col-md-6 text-center">
+                <h2>Reporte genero</h2>
+                <canvas id="idGraficaGenero" class="grafica"></canvas>
             </div>
         </div>
     </div>
+    
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

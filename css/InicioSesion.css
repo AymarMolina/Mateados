@@ -176,3 +176,59 @@ h6{
     margin-top: 50px;
     text-align: center;
 }
+@media screen and (max-width: 720px){
+    #container-left{
+        display: none;
+    }
+    #container-right{
+        display:flex;
+        overflow:visible;
+        align-items: center;
+    }
+    .p1,.p2{
+        font-size: 30px;
+    }
+    .p1{
+        margin-left: 10%;
+    }
+    .p2{
+        width: 200px;
+        margin-left: 150px;
+    }
+    #loginArea{
+        margin-right: -500px;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+    }
+    .form input[type="submit"]{
+        font-family:Arial, Helvetica, sans-serif;
+        color:white;
+        background-color: rgb(33, 138, 236);
+        border-radius: 30px;
+        border:none;
+        font-size: 16px;
+        cursor:pointer;
+        padding:10px 15px;
+        margin-top: 70px;
+        width: 270px;
+        margin-left: 13%;
+        height: 49px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    }
+    .form input[type="submit"]:hover{
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: rgb(13, 90, 206);
+        border-radius: 30px;
+        border:none;
+        font-size: 16px;
+        cursor:pointer;
+        padding:10px 15px;
+        margin-top: 70px;
+        width: 270px;
+        margin-left: 13%;
+        height: 49px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    }
+}
