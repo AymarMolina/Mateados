@@ -64,7 +64,6 @@
                             <input type="password" placeholder="Ingrese su contraseña" name="password" minlength="8">
                         </label>
                         
-                        <h5>¿Has olvidado tu contraseña?</h5>
                         <input type="submit" value="Iniciar sesion">
                         <h6>¿Todavia no formas parte de nuestra comunidad?</h6>
                         
