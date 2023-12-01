@@ -72,20 +72,20 @@ class MySQL{
         }
         return $edades;   
     }
-    public function getComentarios(){
-        $comentarios=0;
+    public function getColegios(){
+        $colegios=0;
         try{
-            $strquery="SELECT COUNT(*) as Usuarios FROM users";
+            $strquery="SELECT COUNT(*) as Colegios FROM schools";
             if($this->conBDPDO()){
                 $pquery=$this->oConBD->prepare($strquery);
                 $pquery->execute();
-                $comentarios=$pquery->fetchColumn();      
+                $colegios=$pquery->fetchColumn();      
             }
         }catch(PDOException $e){
-            echo "MySql.getComentarios:". $e->getMessage()."";
+            echo "MySql.getColegios:". $e->getMessage()."";
             return -1;
         } 
-        return $comentarios;
+        return $colegios-1;
     }
     public function getDatosGrafica(){
         $jDatos='';
@@ -114,10 +114,39 @@ class MySQL{
         }
         return $jDatos;
     }
+    public function getGraficaColegios(){
+        $jDatos='';
+        $rawdata=array();
+        $i=0;
+        try{
+            $strquery="SELECT schools.name as nombre, COUNT(*) as cantidad FROM users JOIN schools ON schools.id = users.idSchool GROUP BY users.idSchool";
+
+            if($this->conBDPDO()){
+                $pquery=$this->oConBD->prepare($strquery);
+                $pquery->execute();
+                $pquery->setFetchMode(PDO::FETCH_ASSOC);
+                while($producto2=$pquery->fetch()){
+                    $oColegio=new Colegio();
+                    $oColegio->totalAlumnos=$producto2["cantidad"];
+                    $oColegio->colegiosa=$producto2["nombre"];
+                    $rawdata[$i]= $oColegio;
+                    $i++;
+                }
+                $jDatos=json_encode($rawdata);
+            }
+        }catch(PDOException $e){
+            echo "MySQL.getGraficaColegios: ". $e->getMessage()."\n";
+        }
+        return $jDatos;
+    }
 }
 class Grafica{
     public $totalRegistros=0;
     public $totalEdades=0;
     public $fechaRegistro=0;
+}
+class Colegio{
+    public $totalAlumnos=0;
+    public $colegiosa=0;
 }
 ?>

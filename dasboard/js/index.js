@@ -4,6 +4,7 @@ function index(){
         this.getIndicadores();
         this.getDatosGraficas();
         this.getDatosGraficasGenero();
+        this.getGraficaColegio();
     }
     this.getIndicadores=function(){
 
@@ -53,7 +54,7 @@ function index(){
             }
          }).done(function(datos){
                 //lA LOGICA de las respuestas
-                $("#idComentarios").text(parseFloat(datos).toLocaleString());
+                $("#idColegios").text(parseFloat(datos).toLocaleString());
             });
 
         $.ajax({
@@ -100,6 +101,7 @@ function index(){
                 rq:"4"
             }
          }).done(function(datos){
+            console.log("Datos recibidos del servidor:", datos);
             if(datos!=''){
                 let etiquetas=new Array();
                 let tRegistros=new Array();
@@ -180,6 +182,55 @@ function index(){
                 console.log("Error en la solicitud AJAX: " + textStatus, errorThrown);
             });;
     }
+    this.getGraficaColegio = function() {
+        $.ajax({
+            statusCode: {
+                404: function() {
+                    console.log("Esta página no existe");
+                }
+            },
+            url: 'php/servidor.php',
+            method: 'POST',
+            data: {
+                rq: "7"
+            }
+        }).done(function(datos) {
+            console.log("Datos recibidos del servidor:", datos);
+            if (datos !== '') {
+                let etiquetas = new Array();
+                let tRegistros = new Array();
+                let color=['#ffc09f','#ffee93','#fcf5c7','#a0ced9','#adf7b6','#ef7159','#81a7d6'];
+                let coloresR = new Array();
+                var jDatos = JSON.parse(datos);
+    
+                for (let i in jDatos) {
+                    etiquetas.push(jDatos[i].colegiosa);
+                    tRegistros.push(jDatos[i].totalAlumnos);
+                    coloresR.push(color[i]);
+                }
+                console.log("Etiquetas:", etiquetas);
+                console.log("Total de Registros:", tRegistros);
+                console.log("Colores:", coloresR);
+
+    
+                var ctx = document.getElementById('idGraficaColegio').getContext('2d');
+                var mychart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: etiquetas,
+                        datasets: [{
+                            label:'Grafico',
+                            data: tRegistros,
+                            backgroundColor: coloresR
+                        }]
+                    }
+                });
+            }
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.log("Error en la solicitud AJAX: " + textStatus, errorThrown);
+        });
+    };
+    
 }
 var oindex=new index();
 setTimeout(function(){oindex.ini();},100);

@@ -11,7 +11,7 @@ else if($rq== 2){
     $response=$oMysql->getEdades();
 }
 else if($rq== 3){
-    $response=$oMysql->getComentarios();
+    $response=$oMysql->getColegios();
 }else if($rq== 4){
     $response=$oMysql->getDatosGrafica();
 }
@@ -20,6 +20,9 @@ else if($rq== 5){
 }
 else if($rq== 6){
     $response=$oMysql->getFemenino();
+}
+else if($rq== 7){
+    $response=$oMysql->getGraficaColegios();
 }
 
 echo $response;
